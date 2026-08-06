@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Pest Control Pensacola FL | Breeze Pest Control — Free Quotes, Fast Local Service</title>
-<meta name="description" content="Local pest &amp; termite control in Pensacola, Gulf Breeze, Pace, Milton, Navarre & Perdido Key. WDO inspections, termite treatments & bonds. Family-owned since 2015. Licensed & insured (FDACS #JF257464). Unlimited reservice guarantee. Call (850) 400-8445 or request a free quote in under 2 minutes." />
+<title>Pensacola Pest Control You Can Trust | Breeze Pest Control</title>
+<meta name="description" content="Pensacola pest control you can trust. Local, licensed pest &amp; termite protection for Gulf Breeze, Pace, Milton, Navarre &amp; Perdido Key. Call (850) 400-8445." />
 <meta name="theme-color" content="#0B2447" />
 <link rel="canonical" href="https://breezepestcontrol.co/" />
-<meta property="og:title" content="Breeze Pest Control — Pensacola's Local Home Protection Team" />
-<meta property="og:description" content="Fast, local pest control across the Pensacola area. Free quotes, unlimited reservice guarantee. Call (850) 400-8445." />
+<meta property="og:title" content="Pensacola Pest Control You Can Trust | Breeze Pest Control" />
+<meta property="og:description" content="Local, licensed pest and termite protection for Pensacola, Gulf Breeze, Pace, Milton, Navarre &amp; Perdido Key. Call (850) 400-8445." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://breezepestcontrol.co/" />
 
@@ -135,6 +135,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .btn-navy{background:var(--navy);color:#fff;padding:13px 24px;font-size:18px}
   .btn-outline{border:2px solid #fff;color:#fff;padding:12px 24px;font-size:18px;background:transparent}
   .btn-red{background:var(--red);color:#fff;padding:13px 24px;font-size:18px}
+
+
+  /* ===== nav dropdown (Service Areas) — CSS only, no JS ===== */
+  .navdrop{position:relative;display:flex;align-items:center}
+  .navdrop > a{font-weight:600;color:var(--navy);text-decoration:none;font-size:15px;display:inline-flex;align-items:center;gap:5px}
+  .navdrop > a::after{content:"\25BE";font-size:11px;opacity:.65}
+  .navdrop:hover > a,.navdrop:focus-within > a{color:var(--royal)}
+  .navdrop-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:14px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;box-shadow:var(--shadow-lg);padding:10px 0;display:none;flex-direction:column;z-index:80;white-space:nowrap;min-width:210px}
+  .navdrop-panel::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+  .navdrop:hover .navdrop-panel,.navdrop:focus-within .navdrop-panel{display:flex}
+  .navdrop-panel a{display:block;padding:9px 22px;font-size:15px;font-weight:600;color:var(--navy);text-decoration:none}
+  .navdrop-panel a:hover{color:var(--royal);background:var(--paper)}
 
   /* ===== hero ===== */
   .hero{background:radial-gradient(1100px 620px at 78% -10%, #1c3f86 0%, transparent 60%),linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 70%,#0d295a 100%);color:#fff;padding:56px 0 60px;position:relative;overflow:hidden}
@@ -273,13 +285,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* ===== footer ===== */
   footer{background:#081a35;color:#b9c8e0;padding:54px 0 40px;font-size:14.5px}
-  .fgrid4{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+  .fgrid4{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:30px}
   footer h4{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);font-size:15px;margin-bottom:12px}
   footer a{color:#dfe8f7;text-decoration:none}
   footer a:hover{text-decoration:underline}
   footer ul{list-style:none}
   footer li{margin:7px 0}
   .fbottom{border-top:1px solid rgba(255,255,255,.14);margin-top:38px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:#8fa2c2}
+
+  /* ===== footer map ===== */
+  .footmap{margin-top:34px}
+  .footmap iframe{width:100%;height:260px;border:0;display:block;border-radius:12px}
+  @media(max-width:560px){.footmap iframe{height:200px}}
 
   @media(max-width:980px){
     .hero-grid,.special .grid2,.g-grid,.careers .grid2,.areas .a-grid{grid-template-columns:1fr}
@@ -350,11 +367,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <span class="p">PEST CONTROL</span>
     </a>
     <nav class="navlinks" aria-label="Main">
-      <a href="#services">Services</a>
+      <a href="/services/">Services</a>
       <a href="/termite-control-pensacola/">Termites</a>
+      <div class="navdrop">
+        <a href="/service-areas/">Service Areas</a>
+        <div class="navdrop-panel">
+          <a href="/service-areas/escambia-county-fl/">Escambia County</a>
+          <a href="/service-areas/santa-rosa-county-fl/">Santa Rosa County</a>
+        </div>
+      </div>
       <a href="#how">How It Works</a>
       <a href="#reviews">Reviews</a>
-      <a href="#areas">Service Area</a>
       <a href="#faq">FAQ</a>
       <a href="/apply">Careers</a>
     </nav>
@@ -372,8 +395,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="wrap hero-grid">
     <div>
       <span class="kicker" style="color:var(--gold)">Pensacola · Family-Owned Since 2015</span>
-      <h1>Pest Control<br><span class="grad">Pensacola</span> Trusts.</h1>
-      <p class="lead">Local, licensed home protection for Pensacola, Gulf Breeze, Pace, Milton, Navarre &amp; Perdido Key — backed by an unlimited reservice guarantee.</p>
+      <h1>Pensacola Pest Control<br><span class="grad">You Can Trust</span></h1>
+      <p class="lead">Local, licensed pest and termite protection for Pensacola, Gulf Breeze, Pace, Milton, Navarre &amp; Perdido Key</p>
       <div class="offer-badge">★ Summer Special — <b>$100 OFF</b> Your Initial Service</div>
       <div class="hero-ctas">
         <a class="btn btn-gold" href="#quote">Get a Free Quote →</a>
@@ -708,10 +731,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </ul>
     </div>
     <div>
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="/service-areas/escambia-county-fl/">Escambia County</a></li>
+        <li><a href="/service-areas/santa-rosa-county-fl/">Santa Rosa County</a></li>
+      </ul>
+    </div>
+    <div>
       <h4>Company</h4>
       <ul>
         <li><a href="#how">How It Works</a></li>
-        <li><a href="#areas">Service Area</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="/apply">Careers</a></li>
       </ul>
@@ -725,6 +754,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li>24-Hour Callback Window</li>
       </ul>
     </div>
+  </div>
+  <div class="wrap footmap">
+    <iframe title="Breeze Pest Control location on Google Maps" src="https://www.google.com/maps?q=Breeze+Pest+Control,+545+Brent+Lane,+Pensacola,+FL+32503&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   </div>
   <div class="wrap fbottom">
     <span>© 2026 Breeze Pest Control · All rights reserved. · <a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms/">Terms &amp; Conditions</a></span>

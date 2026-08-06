@@ -1,0 +1,120 @@
+{
+  "name": "Breeze Pest Control",
+  "origin": "https://breezepestcontrol.co",
+  "phone": "(850) 400-8445",
+  "phoneHref": "+18504008445",
+  "phoneIntl": "+1-850-400-8445",
+  "email": "team@breezepestcontrol.co",
+  "license": "JF257464",
+  "copyrightYear": 2026,
+  "googleAdsId": "AW-18224673726",
+  "gtmId": "GTM-TCGGTXQ4",
+  "address": {
+    "street": "545 Brent Lane",
+    "city": "Pensacola",
+    "region": "FL",
+    "postalCode": "32503"
+  },
+  "gbpEmbed": "https://www.google.com/maps?q=Breeze+Pest+Control,+545+Brent+Lane,+Pensacola,+FL+32503&z=15&output=embed",
+  "areaServed": [
+    "Pensacola FL",
+    "Gulf Breeze FL",
+    "Pace FL",
+    "Milton FL",
+    "Navarre FL",
+    "Pensacola Beach FL",
+    "Perdido Key FL",
+    "Cantonment FL",
+    "Ferry Pass FL",
+    "Warrington FL",
+    "Bellview FL",
+    "Tiger Point FL"
+  ],
+  "defaultChips": [
+    "<b>★ 4.9/5</b> Trusted Pensacola reviews",
+    "Licensed &amp; insured · FDACS #JF257464",
+    "Unlimited reservice guarantee"
+  ],
+  "consentText": "By submitting this form, you agree to receive calls, emails, and text messages from Breeze Pest Control about your request and our services. Consent is not a condition of purchase. Message frequency varies; message &amp; data rates may apply. Reply STOP to opt out or HELP for help. See our <a href=\"/privacy-policy/\">Privacy Policy</a> and <a href=\"/terms/\">Terms &amp; Conditions</a>. We never sell your information.",
+  "_servicesNote": "href is where the footer links today. Once /services/{slug}/ pages are built, change each href to '/services/{slug}/' and update the matching card in content/pages/services.json.",
+  "services": [
+    {
+      "slug": "general-pest-control",
+      "name": "General Pest Defense",
+      "href": "/#services",
+      "formLabel": "General home protection (ants, roaches, spiders)"
+    },
+    {
+      "slug": "termite-control",
+      "name": "Termite Inspections & Treatments",
+      "href": "/termite-control-pensacola/",
+      "formLabel": "Termite / WDO inspection & treatment"
+    },
+    {
+      "slug": "rodent-wildlife-removal",
+      "name": "Rodent & Wildlife Removal",
+      "href": "/#services",
+      "formLabel": "Rodent & wildlife removal"
+    }
+  ],
+  "extraFormOptions": [
+    "Something else / not sure"
+  ],
+  "_redirectsNote": "Legacy flat URL -> its rebuilt tree URL. Flip enabled to true ONLY once the tree page has real copy, never while it is still placeholder — a 301 onto a placeholder page throws away the old page's rankings. Enabled entries are written to /_redirects (Netlify) and dropped from the sitemap automatically.",
+  "redirects": [
+    {
+      "from": "/pest-control-pensacola-beach/",
+      "to": "/service-areas/escambia-county-fl/pensacola-beach/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-cantonment/",
+      "to": "/service-areas/escambia-county-fl/cantonment/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-bellview/",
+      "to": "/service-areas/escambia-county-fl/bellview/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-ferry-pass/",
+      "to": "/service-areas/escambia-county-fl/ferry-pass/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-gulf-breeze/",
+      "to": "/service-areas/santa-rosa-county-fl/gulf-breeze/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-pace/",
+      "to": "/service-areas/santa-rosa-county-fl/pace/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-milton/",
+      "to": "/service-areas/santa-rosa-county-fl/milton/",
+      "enabled": true
+    }
+  ],
+  "legacyUrls": [
+    "/",
+    "/pest-control-pensacola/",
+    "/pest-control-gulf-breeze/",
+    "/pest-control-pace/",
+    "/pest-control-milton/",
+    "/pest-control-cantonment/",
+    "/pest-control-navarre/",
+    "/pest-control-perdido-key/",
+    "/pest-control-pensacola-beach/",
+    "/pest-control-tiger-point/",
+    "/pest-control-ferry-pass/",
+    "/pest-control-bellview/",
+    "/pest-control-warrington/",
+    "/termite-control-pensacola/",
+    "/privacy-policy/",
+    "/terms/"
+  ],
+  "_gbpNote": "Resolved from Karan's share link https://maps.app.goo.gl/PVZskBoQCGCCg8TA6 (Breeze Pest Control GBP, 30.467419,-87.1587755). Short maps.app.goo.gl links cannot be framed — this is the embeddable form."
+}

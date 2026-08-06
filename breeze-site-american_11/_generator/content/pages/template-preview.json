@@ -1,0 +1,130 @@
+{
+  "_comment": "Reference page — every section the template can render, with a sample of each copy field. Noindexed and excluded from the sitemap. Copy this file as the starting point for a new page, then delete any section you do not need (hub, benefits, why, faqs and map are all optional).",
+  "type": "city",
+  "url": "/template-preview/",
+  "crumbLabel": "Template Preview",
+  "noindex": true,
+  "serviceName": "Pest Control in Sample City",
+  "serviceType": "Pest Control",
+  "areaServed": "Sample City",
+  "state": "FL",
+  "head": {
+    "title": "Sample City Pest Control | Breeze Pest Control — Free Quotes",
+    "description": "Meta description goes here — roughly 150 to 160 characters, written for the click, ending with the phone number. Call (850) 400-8445 for a free quote."
+  },
+  "hero": {
+    "kicker": "Serving Sample City, Florida · Since 2015",
+    "h1": "<span class=\"grad\">Sample City</span><br>Pest Control.",
+    "description": "Hero description. This field accepts Markdown links, so an internal link like [our guarantee](/#guarantee) renders as a real link exactly where the copy places it.",
+    "image": "/assets/hero.jpg",
+    "imageAlt": "Breeze Pest Control truck and technician on a job in Sample City, Florida",
+    "offer": "★ Summer Special — <b>$100 OFF</b> Your Initial Service",
+    "chips": [
+      "<b>★ 4.9/5</b> Trusted Pensacola reviews",
+      "Licensed &amp; insured · FDACS #JF257464",
+      "Unlimited reservice guarantee"
+    ]
+  },
+  "quote": {
+    "title": "Get a Free Quote in Sample City",
+    "intro": "Tell us what's bugging you. A member of our local Pensacola team will reach out during business hours — no pressure, no obligation.",
+    "preselectService": "General home protection (ants, roaches, spiders)"
+  },
+  "hub": {
+    "badge": "Sample City Services",
+    "heading": "Choose Your Service",
+    "description": "The hub block renders only when the page has children — remove this key entirely on pages that have none.",
+    "cta": "Explore Service",
+    "cards": [
+      {
+        "href": "/services/",
+        "title": "General Pest Defense",
+        "image": "/assets/roach.jpg",
+        "imageAlt": "Cockroach treated under the General Pest Defense plan",
+        "description": "Card description. Auto-generated cards pull this from the child page's meta description."
+      },
+      {
+        "href": "/services/",
+        "title": "Termite Inspections",
+        "image": "/assets/knee.jpg",
+        "imageAlt": "Inspector checking a crawl space for termite damage",
+        "description": "Card image and title come from the child page's hubCard block when one is present."
+      },
+      {
+        "href": "/services/",
+        "title": "Rodent & Wildlife",
+        "image": "/assets/door.jpg",
+        "imageAlt": "Technician sealing an exterior entry point",
+        "description": "Declared cards like these let a hub link somewhere real before its child pages exist."
+      }
+    ],
+    "variant": "service"
+  },
+  "benefits": {
+    "badge": "Benefits",
+    "heading": "Benefits Heading Goes Here",
+    "subheading": "Benefits subheading — two lines of supporting copy. This field also accepts links, for example an external source like the [FDACS pest control licence lookup](https://www.fdacs.gov/).",
+    "image": "/assets/bugs.jpg",
+    "imageAlt": "Insects commonly treated by Breeze Pest Control",
+    "bullets": [
+      {
+        "title": "First Bullet Title",
+        "text": "Bullet body copy. The title renders as a bold uppercase lead-in above the text, with a blue checkmark to the left."
+      },
+      {
+        "title": "Second Bullet Title",
+        "text": "Three bullets per block is the standard. Bullet text accepts links too."
+      },
+      {
+        "title": "Third Bullet Title",
+        "text": "Image sits on the LEFT for the Benefits block — the Why block below mirrors it."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Why Breeze",
+    "heading": "Why Heading Goes Here",
+    "subheading": "Why subheading. Same structure as Benefits, mirrored — image on the right, paper-coloured background to separate the two blocks visually.",
+    "image": "/assets/truck.jpg",
+    "imageAlt": "Branded Breeze Pest Control service truck",
+    "bullets": [
+      {
+        "title": "First Bullet Title",
+        "text": "Benefits and Why images must be unique per page across a whole batch — no reuse between pages in the same month."
+      },
+      {
+        "title": "Second Bullet Title",
+        "text": "Both blocks close with a gold quote CTA and the phone number."
+      },
+      {
+        "title": "Third Bullet Title",
+        "text": "Bullet count is not fixed by the template, but the copy format is three."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "First FAQ question?",
+      "a": "Answer copy. Links inside FAQ answers stay exactly where the copy puts them — they render as real links for users, and get stripped to plain text only in the FAQPage JSON-LD."
+    },
+    {
+      "q": "Second FAQ question?",
+      "a": "Three FAQs per page is the standard from the copy format. The template will render any number."
+    },
+    {
+      "q": "Third FAQ question?",
+      "a": "Remove the faqs key entirely and both the FAQ section and its FAQPage schema drop out of the page."
+    }
+  ],
+  "map": {
+    "variant": "location",
+    "query": "Pensacola, FL",
+    "zoom": 12,
+    "description": "Map description. Variant 'location' embeds an area map from the query above — use it on county and city pages. Variant 'gbp' embeds the Google Business Profile instead — use it on service pages.",
+    "title": "Breeze Pest Control Sample City service area map"
+  },
+  "final": {
+    "heading": "Sample City, <span class=\"grad\">Protected.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "type": "hub-services",
+  "url": "/services/",
+  "crumbLabel": "Services",
+  "serviceName": "Pest Control Services",
+  "serviceType": "Pest Control",
+  "head": {
+    "title": "Pest Control Services in Pensacola FL | Breeze Pest Control",
+    "description": "General pest defense, termite and WDO inspections, and rodent & wildlife removal across the Pensacola area. Licensed, family-owned. Call (850) 400-8445."
+  },
+  "hero": {
+    "kicker": "Our Services · Family-Owned Since 2015",
+    "h1": "Pest Control<br><span class=\"grad\">Services.</span>",
+    "description": "Everything we do to keep Gulf Coast homes protected — from recurring pest defense to termite bonds and wildlife exclusion. Every service is backed by our [unlimited reservice guarantee](/#guarantee).",
+    "image": "/assets/machine.jpg",
+    "imageAlt": "Breeze Pest Control technician operating treatment equipment outside a Pensacola home"
+  },
+  "hub": {
+    "badge": "What We Do",
+    "heading": "Choose Your Service",
+    "description": "Three core services cover almost every call we get. Not sure which one you need? Request a free quote and we'll tell you straight.",
+    "cta": "Explore Service",
+    "cards": [
+      {
+        "href": "/#services",
+        "title": "General Pest Defense",
+        "image": "/assets/roach.jpg",
+        "imageAlt": "Close-up of a cockroach, one of the pests covered by the General Pest Defense plan",
+        "description": "Bi-monthly interior and perimeter treatment for ants, roaches, spiders, wasps and the rest of the Gulf Coast lineup — with unlimited free reservices between visits."
+      },
+      {
+        "href": "/termite-control-pensacola/",
+        "title": "Termite Inspections & Treatments",
+        "image": "/assets/knee.jpg",
+        "imageAlt": "Breeze Pest Control inspector examining a crawl space during a WDO termite inspection",
+        "description": "Official FDACS-compliant WDO inspections, subterranean and drywood treatments, scheduled preventative retreatments, and renewable termite bonds."
+      },
+      {
+        "href": "/#services",
+        "title": "Rodent & Wildlife Removal",
+        "image": "/assets/door.jpg",
+        "imageAlt": "Technician sealing an exterior entry point during a rodent exclusion job",
+        "description": "Whole-home entry-point survey, full exclusion and sealing, humane removal of raccoons, squirrels, opossums and bats, plus a one-year exclusion warranty."
+      }
+    ],
+    "variant": "service"
+  },
+  "benefits": {
+    "badge": "Why It Works",
+    "heading": "Built For Gulf Coast Homes",
+    "subheading": "Northwest Florida's heat and humidity mean pest pressure never really stops. Our services are built around that reality rather than around one-off spraying.",
+    "image": "/assets/bugs.jpg",
+    "imageAlt": "Assorted insects commonly treated by Breeze Pest Control in the Pensacola area",
+    "bullets": [
+      {
+        "title": "Year-Round Coverage",
+        "text": "Recurring service timed to how pests actually behave through each Gulf Coast season — not a single visit that wears off by August."
+      },
+      {
+        "title": "Licensed & Insured",
+        "text": "FDACS licence #JF257464, carried by every technician who steps onto your property."
+      },
+      {
+        "title": "Pet- & Family-Conscious",
+        "text": "Products and placement chosen with children and pets in mind, and your technician walks you through any precautions before they start."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Why Breeze",
+    "heading": "A Local Team, Not A Call Centre",
+    "subheading": "We are based on Brent Lane in Pensacola. The person who answers the phone knows the neighbourhoods, and the technician who shows up is the same one next time.",
+    "image": "/assets/truck.jpg",
+    "imageAlt": "Branded Breeze Pest Control service truck parked in a Pensacola neighbourhood",
+    "bullets": [
+      {
+        "title": "First Visit Within 48 Hours",
+        "text": "Most new customers are on the schedule within two days of requesting a quote."
+      },
+      {
+        "title": "Unlimited Reservice",
+        "text": "See something between scheduled visits? Your technician comes back at no charge. It is in writing."
+      },
+      {
+        "title": "No Surprise Pricing",
+        "text": "You get the number before we start. No upsell at the door, no charge you did not agree to."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Which service do I need?",
+      "a": "If you are seeing ants, roaches, spiders or wasps, General Pest Defense covers it. Termite damage or a WDO report for a home sale needs our termite service. Scratching in the attic or walls is rodent and wildlife work. If you are unsure, request a free quote and we will tell you which one fits."
+    },
+    {
+      "q": "Can I combine more than one service?",
+      "a": "Yes. Plenty of customers pair General Pest Defense with a termite bond, and we schedule both around the same visit window where possible so you are not managing two calendars."
+    },
+    {
+      "q": "Do you offer one-time treatments?",
+      "a": "We do, but we will be honest about when it makes sense. A single treatment can knock down an active problem; keeping it gone on the Gulf Coast takes a recurring schedule. We will quote both and let you choose."
+    }
+  ],
+  "map": {
+    "variant": "gbp",
+    "description": "Find us on Brent Lane in Pensacola, or call (850) 400-8445 and speak to someone local.",
+    "title": "Breeze Pest Control Google Business Profile"
+  },
+  "final": {
+    "heading": "Your Home, <span class=\"grad\">Protected.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_rule": "COUNTIES ONLY, and NOT the standard template. This page is: counties hub (leads, carries the H1 + breadcrumbs) -> quote form -> final CTA. No hero, Benefits, Why, FAQ or Map. Karan, 2026-08-05. Leave hub.cards empty; county pages are auto-discovered. Cities belong on their county page.",
+  "type": "hub-areas",
+  "url": "/service-areas/",
+  "crumbLabel": "Service Areas",
+  "serviceName": "Pest Control Service Areas",
+  "serviceType": "Pest Control",
+  "head": {
+    "title": "Pest Control Service Areas | Pensacola & Northwest Florida | Breeze",
+    "description": "Breeze Pest Control covers Escambia and Santa Rosa County — Pensacola, Gulf Breeze, Pace, Milton, Navarre and more. Free quotes: (850) 400-8445."
+  },
+  "hub": {
+    "badge": "Our Service Areas",
+    "heading": "Service Areas for Pest Control in Florida",
+    "description": "Florida's heat and humidity keep ants, roaches, rodents and termites active in every season, which is why pest control here works best on a local, recurring schedule rather than a one-off treatment.",
+    "cta": "Explore Service Area",
+    "cards": [],
+    "variant": "location"
+  },
+  "final": {
+    "heading": "Covered Where <span class=\"grad\">You Live.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  }
+}
