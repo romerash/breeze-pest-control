@@ -1,0 +1,98 @@
+{
+  "_primaryKeyword": "Quality Pest Control in Pace, FL",
+  "type": "city",
+  "url": "/service-areas/santa-rosa-county-fl/pace/",
+  "crumbLabel": "Pace",
+  "serviceName": "Quality Pest Control in Pace, FL",
+  "serviceType": "Pest Control",
+  "areaServed": "Pace",
+  "state": "FL",
+  "hubCard": {
+    "title": "Pace",
+    "description": "Fast-growing Santa Rosa County neighbourhoods and businesses, where new construction and developing landscapes draw ants and rodents.",
+    "image": "/assets/areas/pace.jpg",
+    "imageAlt": "Pace, Florida, served by Breeze Pest Control"
+  },
+  "head": {
+    "title": "Quality Pest Control in Pace, FL | Breeze Pest Control",
+    "description": "Breeze Pest Control provides quality pest control in Pace, FL with customized treatments for homes and businesses. Call Now!"
+  },
+  "hero": {
+    "kicker": "Serving Pace, Florida · Since 2015",
+    "h1": "Quality Pest Control in <span class=\"grad\">Pace, FL</span>",
+    "description": "Keeping homes and businesses protected from pests requires consistent care and solutions tailored to local conditions. **Quality Pest Control in Pace, FL** combines detailed inspections with customized treatment plans to help reduce pest activity while supporting healthier, cleaner, and more comfortable residential and commercial environments throughout the community.",
+    "image": "/assets/hero.jpg",
+    "imageAlt": "Breeze Pest Control technician and branded service truck at the Pensacola Beach water tower",
+    "offer": "★ Summer Special — <b>$100 OFF</b> Your Initial Service"
+  },
+  "quote": {
+    "title": "Get a Free Quote in Pace",
+    "intro": "Tell us what's bugging you. A member of our local Pensacola team will reach out during business hours — no pressure, no obligation."
+  },
+  "benefits": {
+    "badge": "Quality Care. Local Expertise.",
+    "heading": "Benefits of Choosing Breeze Pest Control for Quality Pest Control in Pace, FL",
+    "image": "/assets/sections/homeowner-consultation.jpg",
+    "imageAlt": "Technician reviewing a treatment plan with a homeowner at the front door",
+    "bullets": [
+      {
+        "title": "Customized Treatments for Every Property",
+        "text": "<b>Customized Treatments for Every Property:</b> No two properties experience pest activity in the same way. Careful inspections allow treatment plans to be tailored for single-family homes, apartment communities, office buildings, and retail spaces, helping address current infestations while supporting long-term prevention based on each property's unique conditions."
+      },
+      {
+        "title": "Dependable Service That Fits Your Schedule",
+        "text": "<b>Dependable Service That Fits Your Schedule:</b> Property owners often need pest management that works around busy daily routines. Flexible scheduling makes it easier to receive recurring inspections and treatments without disrupting family activities, tenant occupancy, or normal business operations while maintaining reliable pest protection."
+      },
+      {
+        "title": "Comprehensive Property Inspections",
+        "text": "<b>Comprehensive Property Inspections:</b> Every service begins with a detailed evaluation of pest activity, entry points, moisture concerns, and environmental factors influencing infestations. Serving properties throughout <a href=\"https://www.santarosa.fl.gov/\" target=\"_blank\" style=\"text-decoration: underline; display: inline;\">Pace, FL</a>, this inspection process helps create targeted treatment strategies that address both existing pests and conditions that may attract future activity."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Protection Starts Early.",
+    "heading": "Why Quality Pest Control in Pace, FL Matters",
+    "image": "/assets/sections/attic-inspection.jpg",
+    "imageAlt": "Technician checking attic insulation with a flashlight for signs of rodent activity",
+    "bullets": [
+      {
+        "title": "Florida Weather Supports Year-Round Pests",
+        "text": "<b>Florida Weather Supports Year-Round Pests:</b> Warm temperatures and seasonal rainfall allow many insects and rodents to remain active during every season. Preventive pest management helps reduce infestations before they spread while supporting healthier living and working environments across the community."
+      },
+      {
+        "title": "Routine Prevention Improves Comfort",
+        "text": "<b>Routine Prevention Improves Comfort:</b> Pests can quickly interfere with everyday activities by entering kitchens, garages, storage areas, and workplaces. Regular inspections and timely treatments help maintain cleaner indoor spaces where families, employees, and customers can enjoy greater comfort throughout the year."
+      },
+      {
+        "title": "Long-Term Property Maintenance Benefits",
+        "text": "<b>Long-Term Property Maintenance Benefits:</b> Ongoing pest management helps identify developing issues before they become larger infestations. Early intervention supports responsible property maintenance while helping homeowners and business owners reduce recurring pest concerns through proactive inspections and treatment recommendations."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is quality pest control in Pace, FL recommended for newly built homes?",
+      "a": "Yes. Even newly constructed homes can experience pest activity as surrounding landscapes continue to develop. Early inspections help identify potential entry points and environmental conditions that may attract pests. Breeze Pest Control provides customized treatment recommendations based on each property's unique characteristics."
+    },
+    {
+      "q": "Can pest control services help protect restaurants and offices in Pace, FL?",
+      "a": "Absolutely. Commercial properties often benefit from recurring inspections and preventive treatments that support daily operations. Different businesses face different pest concerns, and Breeze Pest Control develops customized service plans designed around each property's layout and operational requirements."
+    },
+    {
+      "q": "What should I do before my pest control appointment in Pace, FL?",
+      "a": "Property owners should make treatment areas accessible and mention any pest activity they have recently noticed. This information helps guide the inspection process and treatment recommendations. <a href=\"https://breezepestcontrol.co/\" style=\"text-decoration: underline; display: inline;\">Breeze Pest Control</a> explains the proposed service plan before work begins so expectations remain clear."
+    }
+  ],
+  "map": {
+    "variant": "location",
+    "query": "Pace, FL",
+    "zoom": 12,
+    "description": "Breeze Pest Control proudly serves Pace, FL with dependable pest management solutions for homes and businesses. Customized pest control services are designed to address common Florida pest challenges while helping property owners maintain cleaner, healthier, and more comfortable indoor and outdoor environments throughout every season.",
+    "title": "Breeze Pest Control Pace service area map"
+  },
+  "final": {
+    "heading": "Pace, <span class=\"grad\">Protected.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  },
+  "batch": "2026-08"
+}
