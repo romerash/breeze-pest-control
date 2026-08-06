@@ -1,0 +1,106 @@
+{
+  "_primaryKeyword": "Professional Pest Control in Santa Rosa County, FL",
+  "type": "county",
+  "url": "/service-areas/santa-rosa-county-fl/",
+  "crumbLabel": "Santa Rosa County",
+  "serviceName": "Professional Pest Control in Santa Rosa County, FL",
+  "serviceType": "Pest Control",
+  "areaServed": "Santa Rosa County",
+  "state": "FL",
+  "head": {
+    "title": "Professional Pest Control in Santa Rosa County, FL | Breeze Pest Control",
+    "description": "Breeze Pest Control delivers professional pest control in Santa Rosa County, FL with customized treatments for homes and businesses. Call Now!"
+  },
+  "hero": {
+    "kicker": "Serving Santa Rosa County, Florida · Since 2015",
+    "h1": "Professional Pest Control in <span class=\"grad\">Santa Rosa County, FL</span>",
+    "description": "Pests can quickly become an ongoing concern when left untreated, making proactive management important for every property. **Professional Pest Control in Santa Rosa County, FL** helps homeowners and businesses reduce pest activity with customized inspections, effective treatment strategies, and dependable service tailored to the unique conditions found throughout the county.",
+    "image": "/assets/hero.jpg",
+    "imageAlt": "Breeze Pest Control technician and branded service truck at the Pensacola Beach water tower",
+    "offer": "★ Summer Special — <b>$100 OFF</b> Your Initial Service"
+  },
+  "quote": {
+    "title": "Get a Free Quote in Santa Rosa County",
+    "intro": "Tell us what's bugging you. A member of our local Pensacola team will reach out during business hours — no pressure, no obligation."
+  },
+  "hub": {
+    "badge": "Our Service Areas",
+    "heading": "Service Areas for Pest Control in Santa Rosa County, FL",
+    "description": "Florida's heat and humidity keep ants, roaches, rodents and termites active in every season, which is why pest control in Santa Rosa County works best on a local, recurring schedule rather than a one-off treatment.",
+    "cta": "Explore Service Area",
+    "cards": [],
+    "variant": "location",
+    "_rule": "Hub block is the same on every area page — copy it from service-areas.json and swap only the location name. Leave cards empty; child pages are auto-discovered. Never add a stand-in card pointing at a legacy flat URL."
+  },
+  "benefits": {
+    "badge": "Dependable Service. Lasting Results.",
+    "heading": "Benefits of Choosing Breeze Pest Control for Professional Pest Control in Santa Rosa County, FL",
+    "image": "/assets/sections/commercial-treatment.jpg",
+    "imageAlt": "Two technicians treating the landscaping and perimeter of a commercial building",
+    "bullets": [
+      {
+        "title": "Customized Treatment Strategies",
+        "text": "<b>Customized Treatment Strategies:</b> Every infestation is different, so treatment plans are developed according to the property's layout, pest activity, and surrounding environment. Whether servicing residential neighborhoods or commercial facilities, tailored solutions help address current concerns while supporting long-term prevention for a variety of common Florida pests."
+      },
+      {
+        "title": "Reliable Service for Every Visit",
+        "text": "<b>Reliable Service for Every Visit:</b> Consistent scheduling and careful follow-up inspections help maintain effective pest management throughout the year. Property owners benefit from organized service visits that monitor changing pest activity while minimizing interruptions to daily routines and business operations."
+      },
+      {
+        "title": "Practical Solutions for Homes and Businesses",
+        "text": "<b>Practical Solutions for Homes and Businesses:</b> Treatment methods are adapted for single-family homes, apartment communities, office buildings, restaurants, and retail properties. By considering how each property is used, pest management remains both efficient and appropriate for the specific environment being protected."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Local Conditions Matter.",
+    "heading": "Why Professional Pest Control in Santa Rosa County, FL Matters",
+    "image": "/assets/sections/termite-inspection.jpg",
+    "imageAlt": "Two technicians inspecting termite damage on a support beam beneath a raised home",
+    "bullets": [
+      {
+        "title": "Coastal Conditions Encourage Pest Activity",
+        "text": "<b>Coastal Conditions Encourage Pest Activity:</b> Humidity, frequent rainfall, and warm temperatures create favorable conditions for insects and rodents across much of the year. Routine pest management helps reduce breeding opportunities while addressing infestations before they spread throughout residential and commercial properties in <a href=\"https://www.santarosa.fl.gov/\" target=\"_blank\" style=\"text-decoration: underline; display: inline;\">Santa Rosa County, FL</a>."
+      },
+      {
+        "title": "Maintaining Comfortable Living Environments",
+        "text": "<b>Maintaining Comfortable Living Environments:</b> Effective pest control helps protect kitchens, living areas, storage spaces, and workplaces from unwanted pests that can interrupt daily life. Ongoing prevention supports cleaner, more enjoyable environments for families, employees, customers, and visitors alike."
+      },
+      {
+        "title": "Helping Protect Property Investments",
+        "text": "<b>Helping Protect Property Investments:</b> Regular inspections and preventive treatments allow property owners to identify pest issues before they contribute to larger infestations or structural concerns. Consistent maintenance supports long-term property care while reducing the likelihood of recurring pest problems throughout the seasons."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How often should homes receive professional pest control in Santa Rosa County, FL?",
+      "a": "The ideal schedule depends on the property, surrounding environment, and existing pest activity. Many homes benefit from recurring inspections and preventive treatments throughout the year. Breeze Pest Control develops service recommendations based on individual property needs instead of using identical schedules for every customer."
+    },
+    {
+      "q": "Can professional pest control help commercial properties in Santa Rosa County, FL?",
+      "a": "Yes. Offices, restaurants, retail locations, and other commercial properties often require customized pest management to support daily operations. Different industries face unique pest challenges, and Breeze Pest Control provides treatment plans designed around each property's use and level of pest activity."
+    },
+    {
+      "q": "What should I expect before a pest control appointment?",
+      "a": "Most appointments begin with a thorough inspection to identify pest activity, entry points, and conditions contributing to infestations. After evaluating the property, appropriate treatment recommendations are provided. Breeze Pest Control explains the proposed approach so property owners understand each step before service begins."
+    }
+  ],
+  "map": {
+    "variant": "location",
+    "query": "Santa Rosa County, FL",
+    "zoom": 10,
+    "description": "Serving communities throughout Santa Rosa County, FL, Breeze Pest Control provides dependable pest management for residential and commercial properties alike. Whether protecting established neighborhoods, growing developments, or local businesses, comprehensive pest control services are designed to address Florida's year-round pest challenges while helping maintain healthier, more comfortable environments.",
+    "title": "Breeze Pest Control Santa Rosa County service area map"
+  },
+  "final": {
+    "heading": "Santa Rosa County, <span class=\"grad\">Protected.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  },
+  "hubCard": {
+    "title": "Santa Rosa County",
+    "image": "/assets/areas/santa-rosa-county-fl.jpg",
+    "imageAlt": "Santa Rosa County Courthouse in Milton, Florida"
+  },
+  "batch": "2026-07"
+}
