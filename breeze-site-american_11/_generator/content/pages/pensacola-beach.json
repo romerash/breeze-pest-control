@@ -25,6 +25,15 @@
     "imageAlt": "Breeze Pest Control technician and branded service truck at the Pensacola Beach water tower",
     "offer": "★ Summer Special — <b>$100 OFF</b> Your Initial Service"
   },
+  "hub": {
+    "badge": "What We Do",
+    "heading": "Services in Pensacola Beach, FL",
+    "description": "Targeted services for Pensacola Beach homes and rentals. Each one starts with an inspection of the property before any treatment is recommended.",
+    "cta": "Explore Service",
+    "cards": [],
+    "variant": "service",
+    "_rule": "Leave cards empty — service pages beneath this city are auto-discovered. Never add a stand-in card pointing at a legacy flat URL."
+  },
   "quote": {
     "title": "Get a Free Quote in Pensacola Beach",
     "intro": "Tell us what's bugging you. A member of our local Pensacola team will reach out during business hours — no pressure, no obligation."

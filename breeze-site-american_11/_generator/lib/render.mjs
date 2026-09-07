@@ -1,7 +1,7 @@
 // Section renderers + page assembly.
 //
 // Section order is Karan's authoritative order:
-//   Hero → [hub, if the page has children] → Benefits → Why → FAQ → Map → Quote form → Final CTA
+//   Hero → [location hub] → Benefits → Why → [services hub] → FAQ → Map → Quote form → Final CTA
 // The quote form ALWAYS sits below the map. Note this differs from the legacy
 // hand-built pages, where the quote card overlapped the hero via a negative
 // margin — styles.mjs cancels that margin for generated pages.
@@ -38,7 +38,7 @@ function breadcrumbSchema(site, crumbs) {
       '@type': 'ListItem',
       position: i + 1,
       name: c.label,
-      item: site.origin + c.href,
+      ...(c.orphan ? {} : { item: site.origin + c.href }),
     })),
   };
 }
@@ -81,7 +81,7 @@ function serviceSchema(site, page) {
 
 function crumbsHtml(crumbs) {
   const parts = crumbs.map((c, i) =>
-    i === crumbs.length - 1
+    i === crumbs.length - 1 || c.orphan
       ? `<span class="here">${escapeHtml(c.label)}</span>`
       : `<a href="${c.href}">${escapeHtml(c.label)}</a>`
   );
@@ -261,11 +261,22 @@ export function renderPage(site, page, { canonical, crumbs, hub = null, counties
   // and breadcrumbs (see hubSection).
   const hasHero = !!page.hero;
 
+  // Hub placement depends on the variant. A SERVICE hub always sits directly
+  // above the FAQ (Karan, 2026-09-03) — after Benefits and Why. A LOCATION hub
+  // leads the page straight after the hero, and on a heroless hub page it takes
+  // over the H1 and breadcrumbs entirely.
+  const hubHtml =
+    hub && hub.cards.length
+      ? hubSection(hub, { asH1: !hasHero, crumbs: hasHero ? null : crumbs })
+      : null;
+  const isServiceHub = hub?.variant === 'service';
+
   const sections = [
     hasHero ? heroSection(site, page, crumbs) : null,
-    hub && hub.cards.length ? hubSection(hub, { asH1: !hasHero, crumbs: hasHero ? null : crumbs }) : null,
+    isServiceHub ? null : hubHtml,
     page.benefits ? splitSection(site, page.benefits, { reverse: false }) : null,
     page.why ? splitSection(site, page.why, { reverse: true }) : null,
+    isServiceHub ? hubHtml : null,
     page.faqs?.length ? faqSection(page.faqs) : null,
     page.map ? mapSection(site, page.map) : null,
     quoteSection(site, {

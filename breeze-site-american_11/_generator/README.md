@@ -36,6 +36,12 @@ from `site.legacyUrls` plus every generated page that is not `noindex`.
 
 ## Adding a page
 
+**Before scaffolding anything, check that the parent page exists.** A page at
+`/a/b/c/` needs a real page at `/a/b/`. If the parent does not exist, the
+breadcrumb has a dead rung, the page has no hub to be linked from, and the
+parent URL 404s. Either build the parent in the same batch or move the child.
+`node _generator/build.mjs` fails loud about this — see **Parent page check**.
+
 1. Copy `content/pages/template-preview.json` to a new file.
 2. Set `url`, `crumbLabel`, and drop `noindex`.
 3. Paste Karan's copy into `head` / `hero` / `benefits` / `why` / `faqs` / `map` / `final`.
@@ -51,8 +57,17 @@ noindexed and excluded from the sitemap — keep it that way.
 Karan's authoritative order:
 
 ```
-Hero → [hub, if the page has children] → Benefits → Why → FAQ → Map → Quote form → Final CTA
+Hero → [location hub] → Benefits → Why → [services hub] → FAQ → Map → Quote form → Final CTA
 ```
+
+**Hub placement depends on the variant.** A `variant: "service"` hub always sits
+directly above the FAQ — after Benefits and Why (Karan, 2026-09-03). A
+`variant: "location"` hub leads the page straight after the hero, and on a
+heroless hub page (`/service-areas/`) it takes over the H1 and breadcrumbs.
+
+**Location service pages (`type: "service"`) carry no Map section** — set by Karan
+on 2026-09-02. They run Hero → Benefits → Why → FAQ → Quote form → Final CTA.
+Omit the `map` key entirely; it drops out cleanly along with its markup.
 
 **The quote form always sits below the map.** This differs from the legacy
 hand-built pages, where the quote card is pulled up over the hero by a negative
@@ -84,11 +99,26 @@ each month's pages get built.
 their county page. Keep `hub.cards` empty there; county pages are picked up
 automatically as direct children.
 
+## Parent page check
+
+Every generated page below the top level must have a real page at its parent
+URL; `/` is exempt, since the homepage is a legacy hand-built page. The build
+lists any page nested under a URL with nothing behind it.
+
+Known open case: `/service-areas/escambia-county-fl/pensacola/termite-inspection/`
+sits under `/service-areas/escambia-county-fl/pensacola/`, which does not exist —
+Pensacola is the last city still on its legacy flat URL. Until that city page is
+built, `crumbsFor()` marks the rung `orphan`, `crumbsHtml()` renders it as plain
+text instead of a link, and it is emitted without an `item` in the
+BreadcrumbList schema. Building the Pensacola city page heals all of it on the
+next build and lets `/pest-control-pensacola/` finally 301.
+
 ## Placeholder guard
 
-A page whose JSON still has `"_status": "AWAITING COPY…"` is automatically
-rendered `noindex` and kept out of the sitemap. Delete the `_status` key when the
-real copy is wired in and the page becomes indexable on the next build. This stops
+A page whose JSON still has a `"_status"` beginning `"AWAITING"` is automatically
+rendered `noindex` and kept out of the sitemap — use it for anything still
+missing (`"AWAITING COPY…"`, `"AWAITING IMAGES…"`). Delete the `_status` key when
+the page is genuinely complete and it becomes indexable on the next build. This stops
 thin scaffold pages from ever being crawled.
 
 ## Redirects

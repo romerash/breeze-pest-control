@@ -1,0 +1,98 @@
+{
+  "_primaryKeyword": "Expert Pest Control in Jay, FL",
+  "type": "city",
+  "url": "/service-areas/santa-rosa-county-fl/jay/",
+  "crumbLabel": "Jay",
+  "serviceName": "Expert Pest Control in Jay, FL",
+  "serviceType": "Pest Control",
+  "areaServed": "Jay",
+  "state": "FL",
+  "hubCard": {
+    "title": "Jay",
+    "description": "Rural homesteads, large yards and outbuildings around Jay, where vegetation and exterior structures create pest pressures unlike denser neighbourhoods.",
+    "image": "/assets/areas/jay.webp",
+    "imageAlt": "Welcome to the Town of Jay sign and municipal water tower in Jay, Florida"
+  },
+  "head": {
+    "title": "Expert Pest Control in Jay, FL | Breeze Pest Control",
+    "description": "Breeze Pest Control offers expert pest control in Jay, FL with tailored treatments and preventive solutions for local properties. Call Now!"
+  },
+  "hero": {
+    "kicker": "Serving Jay, Florida · Since 2015",
+    "h1": "Expert Pest Control in <span class=\"grad\">Jay, FL</span>",
+    "description": "Pest activity around homes and businesses can become persistent when entry points and contributing conditions go unnoticed. **Expert Pest Control in Jay, FL** provides a practical approach built around inspections, targeted treatments, and prevention. Breeze Pest Control tailors recommendations to each property instead of relying on the same strategy for every pest concern.",
+    "image": "/assets/hero.jpg",
+    "imageAlt": "Breeze Pest Control technician and branded service truck at the Pensacola Beach water tower",
+    "offer": "★ Fall Special — <b>$100 OFF</b> Your Initial Service"
+  },
+  "quote": {
+    "title": "Get a Free Quote in Jay",
+    "intro": "Tell us what's bugging you. A member of our local Pensacola team will reach out during business hours — no pressure, no obligation."
+  },
+  "benefits": {
+    "badge": "Focused Care. Dependable Service.",
+    "heading": "Benefits of Breeze Pest Control for Expert Pest Control in Jay, FL",
+    "image": "/assets/sections/moisture-meter-baseboard.webp",
+    "imageAlt": "Technician reading a moisture meter against a baseboard during a property inspection",
+    "bullets": [
+      {
+        "title": "Treatments Based on Inspection Findings",
+        "text": "<b>Treatments Based on Inspection Findings:</b> Effective pest management starts by understanding where activity is occurring and what may be contributing to it. Breeze Pest Control evaluates accessible entry points, pest-prone areas, and surrounding conditions before recommending treatment, helping focus service on the actual concerns identified around the property."
+      },
+      {
+        "title": "Convenient Care for Busy Households",
+        "text": "<b>Convenient Care for Busy Households:</b> Pest service should fit into everyday property routines without creating unnecessary disruption. Organized appointments make it easier for homeowners, landlords, and business operators to address pest concerns while continuing normal activities, whether maintaining an occupied residence, preparing a rental, or managing an active workplace."
+      },
+      {
+        "title": "Consistent Attention to Recurring Activity",
+        "text": "<b>Consistent Attention to Recurring Activity:</b> Pest concerns can return as weather, moisture, landscaping, and other property conditions change. Ongoing monitoring gives Breeze Pest Control an opportunity to evaluate new activity and adjust recommendations when appropriate, supporting a more responsive approach to pest management over time."
+      }
+    ]
+  },
+  "why": {
+    "badge": "Local Prevention Matters.",
+    "heading": "Why Expert Pest Control in Jay, FL Matters",
+    "image": "/assets/sections/garage-wall-base-check.webp",
+    "imageAlt": "Technician inspecting the base of a garage wall and door frame with a flashlight",
+    "bullets": [
+      {
+        "title": "Warm Conditions Can Sustain Pest Pressure",
+        "text": "<b>Warm Conditions Can Sustain Pest Pressure:</b> Northwest Florida’s climate can provide favorable conditions for insects and other pests during much of the year. Proactive pest management helps homeowners and businesses in <a href=\"https://www.santarosa.fl.gov/\" target=\"_blank\" style=\"text-decoration: underline; display: inline;\">Jay, FL</a> respond to activity before unwanted pests become established in frequently used areas."
+      },
+      {
+        "title": "Rural Properties Can Present Unique Conditions",
+        "text": "<b>Rural Properties Can Present Unique Conditions:</b> Homes with larger yards, vegetation, sheds, garages, or other exterior features may encounter pest pressures different from denser residential settings. Regular inspections can help identify where pests are entering or finding favorable conditions, allowing problems to be addressed more strategically."
+      },
+      {
+        "title": "Early Attention Supports Property Readiness",
+        "text": "<b>Early Attention Supports Property Readiness:</b> Finding pests before guests arrive, tenants move in, or normal business activity begins can create unnecessary inconvenience. Preventive inspections help uncover developing concerns earlier, giving property owners an opportunity to address pest activity before it interferes with how indoor and outdoor spaces are used."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do rural homes need expert pest control in Jay, FL?",
+      "a": "Rural and larger residential properties can encounter pest activity associated with vegetation, exterior structures, moisture, and nearby open areas. The actual need depends on conditions around the home. Breeze Pest Control evaluates the property and observed activity before recommending treatments or preventive measures suited to the situation."
+    },
+    {
+      "q": "When should I call for pest control after finding rodents around my Jay, FL property?",
+      "a": "An inspection is worth scheduling when droppings, noises, gnawing, or repeated rodent sightings are noticed. Determining potential access points and contributing conditions can help guide the response. <a href=\"https://breezepestcontrol.co/\" style=\"text-decoration: underline; display: inline;\">Breeze Pest Control</a> assesses the property before recommending an appropriate pest management strategy."
+    },
+    {
+      "q": "What should homeowners expect from pest control service in Jay, FL?",
+      "a": "A pest control visit generally begins by evaluating the reported concern and inspecting relevant areas for activity or conditions that may support pests. Treatment recommendations depend on what is found. Breeze Pest Control explains the proposed approach so homeowners understand how the identified pest issue will be addressed."
+    }
+  ],
+  "map": {
+    "variant": "location",
+    "query": "Jay, FL",
+    "zoom": 12,
+    "description": "Breeze Pest Control serves homes and businesses throughout Jay, FL with localized pest management suited to residential, rural, and commercial settings. From identifying active infestations to addressing conditions that encourage recurring activity, comprehensive pest control helps local property owners take a proactive approach to maintaining comfortable indoor and outdoor spaces.",
+    "title": "Breeze Pest Control Jay service area map"
+  },
+  "final": {
+    "heading": "Jay, <span class=\"grad\">Protected.</span>",
+    "description": "Two minutes online. A callback from a real local. First visit within 48 hours. No surprises — ever."
+  },
+  "batch": "2026-09"
+}

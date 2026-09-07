@@ -28,7 +28,8 @@
     "Ferry Pass FL",
     "Warrington FL",
     "Bellview FL",
-    "Tiger Point FL"
+    "Tiger Point FL",
+    "Jay FL"
   ],
   "defaultChips": [
     "<b>★ 4.9/5</b> Trusted Pensacola reviews",
@@ -45,9 +46,8 @@
       "formLabel": "General home protection (ants, roaches, spiders)"
     },
     {
-      "slug": "termite-control",
+      "slug": "termite-inspection",
       "name": "Termite Inspections & Treatments",
-      "href": "/termite-control-pensacola/",
       "formLabel": "Termite / WDO inspection & treatment"
     },
     {
@@ -95,6 +95,11 @@
     {
       "from": "/pest-control-milton/",
       "to": "/service-areas/santa-rosa-county-fl/milton/",
+      "enabled": true
+    },
+    {
+      "from": "/pest-control-navarre/",
+      "to": "/service-areas/santa-rosa-county-fl/navarre/",
       "enabled": true
     }
   ],

@@ -31,6 +31,13 @@ const pages = readdirSync(join(HERE, 'content', 'pages'))
 
 const byUrl = new Map(pages.map((p) => [p.url, p]));
 
+/** "pensacola-beach" -> "Pensacola Beach"; used to title a crumb with no page. */
+const prettifySlug = (seg) =>
+  seg
+    .split('-')
+    .map((w) => (w === 'fl' ? 'FL' : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(' ');
+
 /** Breadcrumbs from the URL path, labelled from each ancestor page's crumbLabel. */
 function crumbsFor(page) {
   const crumbs = [{ label: 'Home', href: '/' }];
@@ -42,8 +49,17 @@ function crumbsFor(page) {
     const href = `${path}/`;
     const ancestor = byUrl.get(href);
     crumbs.push({
-      label: ancestor?.crumbLabel || page.crumbLabel || seg,
+      // An orphan rung has no page to take a crumbLabel from, so it is titled
+      // from its own URL slug — never from the current page's label.
+      label:
+        ancestor?.crumbLabel ||
+        (href === page.url ? page.crumbLabel : null) ||
+        prettifySlug(seg),
       href,
+      // A rung with no page behind it (e.g. a service page whose city page has
+      // not been rebuilt into the tree yet) renders as plain text and is left
+      // out of the BreadcrumbList `item` — never link a crumb to a 404.
+      orphan: !ancestor && href !== page.url,
     });
   }
   return crumbs;
@@ -78,11 +94,13 @@ function hubFor(page) {
 /* ------------------------------------------------------------------- build */
 
 /**
- * A page still carrying its scaffold placeholder copy must never be indexed or
- * sitemapped — thin placeholder pages getting crawled is worse than not existing.
- * The guard clears itself automatically when `_status` is removed on copy arrival.
+ * A page still carrying a scaffold placeholder — missing copy OR missing images —
+ * must never be indexed or sitemapped; thin or broken-image pages getting crawled
+ * is worse than not existing. Any `_status` beginning "AWAITING" holds the page
+ * back ("AWAITING COPY…", "AWAITING IMAGES…"). The guard clears itself
+ * automatically when `_status` is removed once the page is genuinely complete.
  */
-const awaitingCopy = (page) => String(page._status || '').startsWith('AWAITING COPY');
+const awaitingCopy = (page) => String(page._status || '').startsWith('AWAITING');
 
 // Karan's limits. Anything over gets truncated in results.
 const MAX_TITLE = 80;
@@ -134,7 +152,7 @@ for (const page of pages) {
   written.push({ url: page.url, bytes: Buffer.byteLength(html), noindex: !!page.noindex });
   console.log(
     `${CHECK_ONLY ? 'check' : 'write'}  ${page.url.padEnd(46)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} KB${
-      awaitingCopy(page) ? '  [awaiting copy — noindex]' : page.noindex ? '  [noindex]' : ''
+      awaitingCopy(page) ? '  [' + String(page._status).split('—')[0].trim().toLowerCase() + ' — noindex]' : page.noindex ? '  [noindex]' : ''
     }`
   );
 }
@@ -201,6 +219,51 @@ if (dupes.length) {
   dupes.forEach((w) => console.log(`   ${w}`));
 } else {
   console.log('\nimages: Benefits/Why unique within every batch');
+}
+
+/* ------------------------------------------- Service card image sharing */
+// A service's hub card image belongs to the SERVICE, not the city — the
+// "Termite Inspection" card must look identical on every page that lists it
+// (Karan, 2026-09-03). Location cards (city/county) keep their own photo.
+const cardImagesByService = {};
+for (const p of pages) {
+  if (p.type !== 'service' || !p.hubCard?.image) continue;
+  ((cardImagesByService[p.serviceType] ||= {})[p.hubCard.image] ||= []).push(p.url);
+}
+const cardDrift = Object.entries(cardImagesByService).filter(
+  ([, imgs]) => Object.keys(imgs).length > 1
+);
+
+if (cardDrift.length) {
+  console.log(`\n\u26a0  ${cardDrift.length} service(s) using more than one hub card image:`);
+  cardDrift.forEach(([svc, imgs]) => {
+    console.log(`   ${svc}`);
+    Object.entries(imgs).forEach(([img, urls]) =>
+      console.log(`     ${img}  ${urls.join('  ')}`)
+    );
+  });
+  console.log('   One image per service, shared across every page that lists it.');
+} else {
+  console.log('\ncards: each service uses one shared hub card image');
+}
+
+/* ------------------------------------------------ Parent page existence */
+// Every page below the top level must have a real page at its parent URL. A
+// page nested under a URL nothing serves (e.g. a /{city}/{service}/ page whose
+// city page was never rebuilt into the tree) leaves a dead rung in the
+// breadcrumb trail and gives the page no hub to be linked from. `/` is exempt —
+// the homepage is a legacy hand-built page, not a generated one.
+const orphanParents = pages
+  .filter((p) => !awaitingCopy(p))
+  .map((p) => ({ page: p.url, parent: p.url.replace(/[^/]+\/$/, '') }))
+  .filter((r) => r.parent !== '/' && !byUrl.has(r.parent));
+
+if (orphanParents.length) {
+  console.log(`\n⚠  ${orphanParents.length} page(s) nested under a URL with no page behind it:`);
+  orphanParents.forEach((r) => console.log(`   ${r.page}\n     parent 404s: ${r.parent}`));
+  console.log('   Build the parent page, or move the child — never link a crumb to a 404.');
+} else {
+  console.log('\nparents: every page has a real page at its parent URL');
 }
 
 if (metaWarnings.length) {
