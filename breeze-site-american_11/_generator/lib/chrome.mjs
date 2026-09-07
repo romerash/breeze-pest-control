@@ -11,6 +11,13 @@ export function head(site, page, { canonical, jsonLd = [], noindex = false }) {
   const ogTitle = plain(page.head.ogTitle || page.head.title);
   const ogDesc = plain(page.head.ogDescription || page.head.description);
 
+  // Social preview image. Absolute URL is required — Facebook, LinkedIn, X and
+  // iMessage all reject a relative og:image. Falls back to the sitewide default
+  // in site.json; a page can override with head.ogImage / head.ogImageAlt.
+  const og = page.head.ogImage || site.ogImage;
+  const ogImage = og?.url ? site.origin + og.url : null;
+  const ogAlt = plain(page.head.ogImageAlt || og?.alt || ogTitle);
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +31,23 @@ export function head(site, page, { canonical, jsonLd = [], noindex = false }) {
 <meta property="og:description" content="${escapeHtml(ogDesc)}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="${canonical}" />
+<meta property="og:site_name" content="${escapeHtml(site.name)}" />
+<meta property="og:locale" content="en_US" />${
+    ogImage
+      ? `
+<meta property="og:image" content="${ogImage}" />
+<meta property="og:image:secure_url" content="${ogImage}" />
+<meta property="og:image:type" content="${og.type || 'image/jpeg'}" />
+<meta property="og:image:width" content="${og.width || 1200}" />
+<meta property="og:image:height" content="${og.height || 630}" />
+<meta property="og:image:alt" content="${escapeHtml(ogAlt)}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${escapeHtml(ogTitle)}" />
+<meta name="twitter:description" content="${escapeHtml(ogDesc)}" />
+<meta name="twitter:image" content="${ogImage}" />
+<meta name="twitter:image:alt" content="${escapeHtml(ogAlt)}" />`
+      : ''
+  }
 
 <!-- Google tag (gtag.js) — Google Ads -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=${site.googleAdsId}"></script>

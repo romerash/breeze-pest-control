@@ -16,6 +16,14 @@
     "postalCode": "32503"
   },
   "gbpEmbed": "https://www.google.com/maps?q=Breeze+Pest+Control,+545+Brent+Lane,+Pensacola,+FL+32503&z=15&output=embed",
+  "_ogImageNote": "Sitewide social preview image. Must stay 1200x630 (1.91:1) — the ratio Facebook, LinkedIn and X render without cropping. A page can override it with head.ogImage / head.ogImageAlt.",
+  "ogImage": {
+    "url": "/assets/og-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "type": "image/jpeg",
+    "alt": "Breeze Pest Control technician and branded service truck at the Pensacola Beach water tower"
+  },
   "areaServed": [
     "Pensacola FL",
     "Gulf Breeze FL",
